@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Orders" max_length="40" name="x_195640_reagents_orders" type="collection">
+        <element audit="true" label="Cost" max_length="40" name="cost" type="decimal"/>
+        <element audit="true" label="Location" max_length="40" name="location" reference="x_195640_reagents_locations" type="reference"/>
+        <element audit="true" label="Quantity" max_length="40" name="quantity" type="float"/>
+        <element audit="true" label="Reagent" max_length="32" name="reagent" reference="x_195640_reagents_reagent" type="reference"/>
+        <element audit="true" label="Supplier" max_length="32" name="supplier" reference="x_195640_reagents_suppliers" type="reference"/>
+        <index name="index">
+            <element name="reagent"/>
+        </index>
+        <index name="index2">
+            <element name="supplier"/>
+        </index>
+    </element>
+</database>

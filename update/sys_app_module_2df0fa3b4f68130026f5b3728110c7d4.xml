@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Reagent">e9f0fa3b4f68130026f5b3728110c7d2</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Reagents</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_195640_reagents_reagent</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_195640_reagents.reagent_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-03-06 23:26:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2df0fa3b4f68130026f5b3728110c7d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reagents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
+        <sys_update_name>sys_app_module_2df0fa3b4f68130026f5b3728110c7d4</sys_update_name>
+        <sys_updated_by>chris.clayton</sys_updated_by>
+        <sys_updated_on>2018-03-06 23:26:46</sys_updated_on>
+        <timeline_page/>
+        <title>Reagents</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

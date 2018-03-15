@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_195640_reagents.test_steps_user" name="x_195640_reagents.test_steps_user">817f1a564f30130026f5b3728110c70c</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-03-14 16:35:05</sys_created_on>
+        <sys_id>057f1a564f30130026f5b3728110c70e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>817f1a564f30130026f5b3728110c70c</sys_name>
+        <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
+        <sys_update_name>sys_embedded_help_role_057f1a564f30130026f5b3728110c70e</sys_update_name>
+        <sys_updated_by>chris.clayton</sys_updated_by>
+        <sys_updated_on>2018-03-14 16:35:05</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

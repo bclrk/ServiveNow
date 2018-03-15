@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Locations" max_length="40" name="x_195640_reagents_locations" type="collection">
+        <element audit="true" label="Address" max_length="400" name="address" type="string_full_utf8"/>
+        <element audit="true" label="Name" max_length="40" name="name" type="string_full_utf8"/>
+    </element>
+</database>

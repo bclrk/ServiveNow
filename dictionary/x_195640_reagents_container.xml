@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Containers" max_length="40" name="x_195640_reagents_container" type="collection">
+        <element audit="true" label="Barcode" max_length="10" name="barcode" type="float"/>
+        <element audit="true" label="Location" max_length="32" name="location" reference="x_195640_reagents_locations" type="reference"/>
+        <element audit="true" label="Parent Container Barcode" max_length="40" name="parent_container_id" reference="x_195640_reagents_container" type="reference"/>
+        <element audit="true" label="Quantity" max_length="10" name="quantity" type="float"/>
+        <element audit="true" label="Reagent" max_length="40" name="reagent_id" reference="x_195640_reagents_reagent" type="reference"/>
+        <index name="index">
+            <element name="location"/>
+        </index>
+    </element>
+</database>
