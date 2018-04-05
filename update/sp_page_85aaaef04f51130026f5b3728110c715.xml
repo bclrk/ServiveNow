@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>other</category>
+        <css>section.page {
+  background-image: url(Wallpapers-Technology-HD.jpg); 
+  background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+section.page, main.body {
+    padding-top: 0px !important;
+}
+</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>rim_main_menu</id>
+        <internal>false</internal>
+        <public>true</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-04-03 22:04:28</sys_created_on>
+        <sys_id>85aaaef04f51130026f5b3728110c715</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>rim_main_menu</sys_name>
+        <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
+        <sys_update_name>sp_page_85aaaef04f51130026f5b3728110c715</sys_update_name>
+        <sys_updated_by>chris.clayton</sys_updated_by>
+        <sys_updated_on>2018-04-04 18:43:31</sys_updated_on>
+        <title>RIM Main Menu</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=85aaaef04f51130026f5b3728110c715"/>
+</record_update>

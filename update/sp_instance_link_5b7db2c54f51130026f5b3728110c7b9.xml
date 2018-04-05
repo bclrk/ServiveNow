@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>warning</color>
+        <css/>
+        <glyph>puzzle-piece</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>View tests or create a test</short_description>
+        <size>md</size>
+        <sp_column display_value="5">6afc7a854f51130026f5b3728110c79b</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-04-04 18:05:18</sys_created_on>
+        <sys_id>5b7db2c54f51130026f5b3728110c7b9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Tests</sys_name>
+        <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
+        <sys_update_name>sp_instance_link_5b7db2c54f51130026f5b3728110c7b9</sys_update_name>
+        <sys_updated_by>jjorss</sys_updated_by>
+        <sys_updated_on>2018-04-05 22:09:16</sys_updated_on>
+        <title>Tests</title>
+        <type>url</type>
+        <url>https://dev43052.service-now.com/rim/?id=rim_form&amp;table=x_195640_reagents_test_steps&amp;sys_id=-1</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=5b7db2c54f51130026f5b3728110c7b9"/>
+</record_update>
