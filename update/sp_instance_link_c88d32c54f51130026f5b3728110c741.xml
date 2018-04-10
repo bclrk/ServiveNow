@@ -14,7 +14,7 @@
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description>needs descriptions ....</short_description>
+        <short_description>View containers or create one</short_description>
         <size>md</size>
         <sp_column display_value="6">eafc7e854f51130026f5b3728110c7b1</sp_column>
         <sp_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</sp_page>
@@ -23,14 +23,14 @@
         <sys_created_by>chris.clayton</sys_created_by>
         <sys_created_on>2018-04-04 18:05:21</sys_created_on>
         <sys_id>c88d32c54f51130026f5b3728110c741</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Containers</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
         <sys_update_name>sp_instance_link_c88d32c54f51130026f5b3728110c741</sys_update_name>
-        <sys_updated_by>jjorss</sys_updated_by>
-        <sys_updated_on>2018-04-05 22:09:28</sys_updated_on>
+        <sys_updated_by>benclark</sys_updated_by>
+        <sys_updated_on>2018-04-05 22:42:53</sys_updated_on>
         <title>Containers</title>
         <type>url</type>
         <url>https://dev43052.service-now.com/rim/?id=rim_form&amp;table=x_195640_reagents_container&amp;sys_id=-1</url>
