@@ -12,7 +12,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">019a6ef04f51130026f5b3728110c7a7</sp_column>
-        <sp_widget display_value="JacksonsWidget">419aaaf04f51130026f5b3728110c714</sp_widget>
+        <sp_widget/>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>jjorss</sys_created_by>
         <sys_created_on>2018-04-03 22:04:11</sys_created_on>

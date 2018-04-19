@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[function($scope, $timeout) {
+	var c = this;
+	
+	$scope.$on("$$uiNotification", function(evt, $$uiNotification) {
+		evt.preventDefault();
+		if (evt.stopPropagation)
+			evt.stopPropagation();
+		addUiNotification($$uiNotification);
+	});
+	
+	var notificationAutoDismissTimeout;
+	function addUiNotification($$uiNotification) {
+		if (angular.isArray($$uiNotification) && !$$uiNotification.length)
+			return;
+
+		if (angular.isArray($$uiNotification) && $$uiNotification.length > 0)
+			c.$$uiNotification = $$uiNotification;
+		else {
+			if (!angular.isArray($scope.$$uiNotification))
+				c.$$uiNotification = [];
+
+			c.$$uiNotification.push($$uiNotification);
+		}
+
+		$timeout.cancel(notificationAutoDismissTimeout);
+		var seconds = 5;
+		if (c.$$uiNotification.length == 1 && c.$$uiNotification[0].type == 'trivial')
+			seconds = 2;
+
+		notificationAutoDismissTimeout = $timeout(function(){
+			c.dismissNotifications();
+		}, seconds * 1000);
+	}
+	
+	c.dismissNotifications = function() {
+		angular.forEach(c.$$uiNotification, function(notification){
+			notification.visible = false;
+		});
+		$timeout(function(){
+			c.$$uiNotification = {};
+		}, 20);
+	}
+
+	c.revealNotification = function($$uiNotification){
+		$timeout(function(){
+			$$uiNotification.visible = true;
+		}, 20);
+	}
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+	// End notification handling
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Wrap any widget in a modal</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rim_modal</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, element, attrs, ctrl){
+	if (!scope.data)
+		return;
+	var $rootScope = $injector.get('$rootScope');
+	var $uibModal = $injector.get('$uibModal');
+	var opts = {
+		size : scope.options.size || 'lg',
+		scope: $rootScope.$new(false, scope),
+		template : element,
+		backdrop: scope.options.backdrop || true,
+		keyboard: scope.options.keyboard != undefined ? scope.options.keyboard : true,
+		controller : function($scope, $uibModalInstance){
+			$scope.instance = scope.data.instance;
+		}
+	};
+
+	if (scope.options.modalBodyClass)
+		element.addClass(scope.options.modalBodyClass);
+	
+	if (scope.options.beforeRender)
+		scope.options.beforeRender.call(null, scope.data.instance.data);
+
+	var modalInstance = $uibModal.open(opts);
+
+	if (scope.options.afterOpen)
+		scope.options.afterOpen.call(null, modalController(modalInstance));
+	
+	if (scope.options.afterClose)
+		modalInstance.closed.then(scope.options.afterClose);
+
+	modalInstance.closed.then(function(){
+		scope.$emit('sp.widget-modal.closed');
+	});
+	
+	function modalController(instance){
+		return {
+			close: function(){
+				instance.close();
+			}
+		}
+	}
+
+}]]></link>
+        <name>RIM Modal</name>
+        <option_schema>[{"name":"embeddedWidgetId","section":"Data","label":"Embedded Widget Id","type":"string"},{"name":"embeddedWidgetOptions","default_value":"","section":"Data","label":"Embedded Widget Options","type":"string"},{"name":"modalBodyClass","section":"Data","label":"Optional Class name for modal body","type":"string"},{"name":"beforeRender","section":"Data","label":"Before modal render Callback called with embedded widget data object","type":"string"},{"name":"afterClose","section":"Data","label":"After modal close Callback","type":"string"},{"name":"afterOpen","section":"Data","label":"After modal open Callback called with modal controller","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[// populate the 'data' object
+// e.g., data.table = $sp.getValue('table');
+(function(){
+	var id = options.embeddedWidgetId || input.embeddedWidgetId;
+	var opt = options.embeddedWidgetOptions || input.embeddedWidgetOptions;	
+  data.instance = $sp.getWidget(id, opt);
+})()]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-04-18 16:57:52</sys_created_on>
+        <sys_id>505432a94f21130026f5b3728110c7c8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>RIM Modal</sys_name>
+        <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
+        <sys_update_name>sp_widget_505432a94f21130026f5b3728110c7c8</sys_update_name>
+        <sys_updated_by>chris.clayton</sys_updated_by>
+        <sys_updated_on>2018-04-18 17:10:51</sys_updated_on>
+        <template><![CDATA[<div class="modal-body" style="padding: 0">
+	<div ng-repeat="m in c.$$uiNotification" class="alert"
+			 ng-class="{'alert-danger' : m.type == 'error', 'alert-success' : m.type != 'error', 'visible' : m.visible}"
+       ng-init="c.revealNotification(m)">
+		<span ng-bind-html="m.message"></span>
+		<a class="fa fa-close dismiss-notifications" ng-click="c.dismissNotifications()" ng-show="$first"></a>
+	</div>
+	<sp-widget widget="instance"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>

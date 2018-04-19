@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider>
+        <sp_widget display_value="RIM Form">0c64b2d54fa1130026f5b3728110c768</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-04-17 22:19:40</sys_created_on>
+        <sys_id>4864b2d54fa1130026f5b3728110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spAttachmentManager.RIM Form</sys_name>
+        <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_4864b2d54fa1130026f5b3728110c76b</sys_update_name>
+        <sys_updated_by>chris.clayton</sys_updated_by>
+        <sys_updated_on>2018-04-17 22:19:40</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

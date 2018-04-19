@@ -7,22 +7,22 @@
         <bootstrap_alt>false</bootstrap_alt>
         <class_name/>
         <container_class_name/>
-        <name>RIM Main Menu - Container 4</name>
-        <order>4</order>
+        <name>RIM Main Menu - Container 3</name>
+        <order>3</order>
         <sp_page display_value="rim_main_menu">85aaaef04f51130026f5b3728110c715</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>
         <sys_created_by>chris.clayton</sys_created_by>
-        <sys_created_on>2018-04-04 18:01:06</sys_created_on>
-        <sys_id>358c3a854f51130026f5b3728110c7cf</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>RIM Main Menu - Container 4</sys_name>
+        <sys_created_on>2018-04-11 18:38:28</sys_created_on>
+        <sys_id>2d38075b4f51130026f5b3728110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RIM Main Menu - Container 3</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
-        <sys_update_name>sp_container_358c3a854f51130026f5b3728110c7cf</sys_update_name>
+        <sys_update_name>sp_container_2d38075b4f51130026f5b3728110c7c1</sys_update_name>
         <sys_updated_by>chris.clayton</sys_updated_by>
-        <sys_updated_on>2018-04-05 22:35:52</sys_updated_on>
+        <sys_updated_on>2018-04-11 18:38:28</sys_updated_on>
         <title/>
         <width>container</width>
     </sp_container>
