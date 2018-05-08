@@ -3,22 +3,22 @@
     <sp_column action="INSERT_OR_UPDATE">
         <class_name/>
         <order>1</order>
-        <size>12</size>
+        <size>9</size>
         <size_lg/>
         <size_sm/>
         <size_xs/>
-        <sp_row display_value="1">bbae6e0f4f11130026f5b3728110c7e4</sp_row>
+        <sp_row display_value="1">cb70b2eb4f21130026f5b3728110c790</sp_row>
         <sys_class_name>sp_column</sys_class_name>
         <sys_created_by>chris.clayton</sys_created_by>
-        <sys_created_on>2018-04-10 22:08:28</sys_created_on>
-        <sys_id>b7ae624f4f11130026f5b3728110c71b</sys_id>
+        <sys_created_on>2018-04-24 21:49:00</sys_created_on>
+        <sys_id>4b70b2eb4f21130026f5b3728110c792</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>1</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
-        <sys_update_name>sp_column_b7ae624f4f11130026f5b3728110c71b</sys_update_name>
+        <sys_update_name>sp_column_4b70b2eb4f21130026f5b3728110c792</sys_update_name>
         <sys_updated_by>chris.clayton</sys_updated_by>
-        <sys_updated_on>2018-04-10 22:08:28</sys_updated_on>
+        <sys_updated_on>2018-04-24 21:49:00</sys_updated_on>
     </sp_column>
 </record_update>

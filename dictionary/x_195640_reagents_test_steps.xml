@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="Test Steps" max_length="40" name="x_195640_reagents_test_steps" type="collection">
-        <element audit="true" label="Quantity" max_length="40" name="quantity" type="float"/>
-        <element audit="true" label="Reagent" max_length="32" name="reagent" reference="x_195640_reagents_reagent" type="reference"/>
-        <element audit="true" label="Test Number" max_length="20" name="test_number" type="decimal"/>
+        <element audit="true" label="Quantity" mandatory="true" max_length="40" name="quantity" type="float"/>
+        <element audit="true" label="Reagent" mandatory="true" max_length="32" name="reagent" reference="x_195640_reagents_reagent" type="reference"/>
+        <element audit="true" label="Test Number" mandatory="true" max_length="20" name="test_number" type="decimal"/>
         <index name="index">
             <element name="reagent"/>
         </index>

@@ -3,22 +3,22 @@
     <sp_column action="INSERT_OR_UPDATE">
         <class_name/>
         <order>1</order>
-        <size/>
+        <size>12</size>
         <size_lg/>
         <size_sm/>
         <size_xs/>
-        <sp_row display_value="1">099a6ef04f51130026f5b3728110c7a5</sp_row>
+        <sp_row display_value="1">e4f9456e4f31130026f5b3728110c79a</sp_row>
         <sys_class_name>sp_column</sys_class_name>
-        <sys_created_by>jjorss</sys_created_by>
-        <sys_created_on>2018-04-03 22:04:11</sys_created_on>
-        <sys_id>019a6ef04f51130026f5b3728110c7a7</sys_id>
+        <sys_created_by>chris.clayton</sys_created_by>
+        <sys_created_on>2018-05-03 22:02:46</sys_created_on>
+        <sys_id>a4f9456e4f31130026f5b3728110c79c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>1</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
-        <sys_update_name>sp_column_019a6ef04f51130026f5b3728110c7a7</sys_update_name>
-        <sys_updated_by>jjorss</sys_updated_by>
-        <sys_updated_on>2018-04-03 22:04:11</sys_updated_on>
+        <sys_update_name>sp_column_a4f9456e4f31130026f5b3728110c79c</sys_update_name>
+        <sys_updated_by>chris.clayton</sys_updated_by>
+        <sys_updated_on>2018-05-03 22:02:46</sys_updated_on>
     </sp_column>
 </record_update>

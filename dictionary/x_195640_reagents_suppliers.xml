@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="Suppliers" max_length="40" name="x_195640_reagents_suppliers" type="collection">
-        <element audit="true" label="Address" max_length="200" name="address" type="string_full_utf8"/>
-        <element audit="true" label="Name" max_length="40" name="name" type="string_full_utf8"/>
+        <element audit="true" label="Address" mandatory="true" max_length="200" name="address" type="string_full_utf8"/>
+        <element audit="true" label="Name" mandatory="true" max_length="40" name="name" type="string_full_utf8"/>
     </element>
 </database>

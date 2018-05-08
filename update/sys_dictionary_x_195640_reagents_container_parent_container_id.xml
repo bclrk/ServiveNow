@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Parent Container Barcode</column_label>
+        <column_label>Parent Container</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -34,7 +34,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_195640_reagents_container</name>
         <next_element/>
@@ -55,14 +55,14 @@
         <sys_created_by>chris.clayton</sys_created_by>
         <sys_created_on>2018-03-06 23:14:50</sys_created_on>
         <sys_id>6faca6774f68130026f5b3728110c79b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Parent Container Barcode</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Parent Container</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
         <sys_update_name>sys_dictionary_x_195640_reagents_container_parent_container_id</sys_update_name>
         <sys_updated_by>chris.clayton</sys_updated_by>
-        <sys_updated_on>2018-03-14 17:05:14</sys_updated_on>
+        <sys_updated_on>2018-04-24 22:17:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

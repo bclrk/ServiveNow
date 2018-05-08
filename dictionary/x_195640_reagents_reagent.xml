@@ -2,7 +2,7 @@
 <database>
     <element audit="true" label="Reagents" max_length="40" name="x_195640_reagents_reagent" type="collection">
         <element audit="true" label="Comments" max_length="400" name="comments" type="string_full_utf8"/>
-        <element audit="true" label="Name" max_length="40" name="name" type="string_full_utf8"/>
-        <element audit="true" label="Unit of Measurement" max_length="4" name="unit_of_measurement" type="string_full_utf8"/>
+        <element audit="true" label="Name" mandatory="true" max_length="40" name="name" type="string_full_utf8"/>
+        <element audit="true" label="Unit of Measurement" mandatory="true" max_length="4" name="unit_of_measurement" type="string_full_utf8"/>
     </element>
 </database>

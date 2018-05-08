@@ -12,13 +12,13 @@
         <sys_created_by>chris.clayton</sys_created_by>
         <sys_created_on>2018-04-19 21:53:34</sys_created_on>
         <sys_id>9d9145464fa1130026f5b3728110c78d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>1</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
         <sys_update_name>sp_column_9d9145464fa1130026f5b3728110c78d</sys_update_name>
         <sys_updated_by>chris.clayton</sys_updated_by>
-        <sys_updated_on>2018-04-19 21:53:34</sys_updated_on>
+        <sys_updated_on>2018-04-24 21:59:36</sys_updated_on>
     </sp_column>
 </record_update>

@@ -154,6 +154,132 @@ margin: 0px;
   .navbar-collapse {
     display: flex !important;
   }
+}
+
+.iconlink a label,h2 {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+/* TOP ICON ---------- */
+
+a.top_icon {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+a.top_icon .fa {
+  display: block;
+  text-align: center;
+}
+
+/* CIRCLE ICON ---------- */
+
+a.circle_icon {
+  display: block;
+  padding: 20px 0px 20px 70px;
+  position: relative;
+}
+
+a.circle_icon .fa {
+  position:absolute;
+  left: 0px;
+  top: 10px;
+}
+
+/* COLOR BOX ---------- */
+
+a.color_box {
+  display: block;
+  position: relative;
+  padding: 20px 20px 20px 82px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+a.color_box .fa {
+  position:absolute;
+  left: 20px;
+  top: 20px;
+  width:42px;
+  text-align: center;
+}
+
+.icon-link-background-primary {
+  background-color: $brand-primary;
+}
+
+.icon-link-background-info {
+  background-color: $brand-info;
+}
+
+.icon-link-background-success {
+  background-color: $brand-success;
+}
+
+.icon-link-background-warning {
+  background-color: $brand-warning;
+}
+
+.icon-link-background-danger {
+  background-color: $brand-danger;
+}
+
+.icon-link-background-default {
+  background-color: $brand-primary;
+}
+
+.text-primary {
+  color: $brand-primary;
+  
+  &amp;:hover {
+    color: darken($brand-primary, 20%);
+  }
+}
+
+.text-info {
+  color: $brand-info;
+  
+  &amp;:hover {
+    color: darken($brand-info, 20%);
+  }
+}
+
+.text-success {
+  color: $brand-success;
+  
+  &amp;:hover {
+    color: darken($brand-success, 20%);
+  }
+}
+
+.text-warning {
+  color: $brand-warning;
+  
+  &amp;:hover {
+    color: darken($brand-warning, 20%);
+  }
+}
+
+.text-danger {
+  color: $brand-danger;
+  
+  &amp;:hover {
+    color: darken($brand-danger, 20%);
+  }
+}
+
+.text-default {
+  color: $brand-primary;
+  
+  &amp;:hover {
+    color: darken($brand-primary, 20%);
+  }
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -161,7 +287,7 @@ margin: 0px;
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>rim_header</id>
+        <id>rim-header</id>
         <internal>false</internal>
         <link><![CDATA[function(scope, element) {
 	$(document).keyup(function(event) {
@@ -223,20 +349,29 @@ if (data.menu && data.menu.data) {
 	}
 }
 
-data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
+data.loginWidget = $sp.getWidgetFromInstance('login-modal');
+
+
+/*
+(function(){
+	var gr=$sp.getInstanceRecord();
+	data.href=$sp.getMenuHREF(gr);
+	data.target=options.target||"";
+})();
+*/]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>chris.clayton</sys_created_by>
         <sys_created_on>2018-04-05 22:25:23</sys_created_on>
         <sys_id>b6920dad4f11130026f5b3728110c758</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>RIM Header</sys_name>
         <sys_package display_value="Reagents Inventory Management" source="x_195640_reagents">d60be6f34f68130026f5b3728110c73a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reagents Inventory Management">d60be6f34f68130026f5b3728110c73a</sys_scope>
         <sys_update_name>sp_widget_b6920dad4f11130026f5b3728110c758</sys_update_name>
         <sys_updated_by>chris.clayton</sys_updated_by>
-        <sys_updated_on>2018-04-05 22:25:23</sys_updated_on>
+        <sys_updated_on>2018-05-03 21:54:16</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation">
@@ -253,10 +388,44 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <span class="icon-bar"></span>
       </button>
     </div>
-
+    
     <div sp-navbar-toggle="" class="collapse navbar-collapse navbar-right scrollable-dropdown" id="sp-nav-bar">
       <!-- Include The Menu -->
       <sp-widget widget="::data.menu"></sp-widget>
+      
+      <!-- *** insert icon link code here instead *** -->
+      
+      <p>
+         hello
+      </p>
+      
+    	<div class="iconlink">
+  			<!--// Top Icon -->
+  			<a ng-if="::(options.link_template == 'Top Icon' || !options.link_template)" ng-href="{{::data.href}}" class="top_icon {{::options.class_name}}" target="{{::data.target}}">
+    		<div class="m-b fa fa-{{::options.glyph}} fa-4x {{::options.class_name}} text-{{::options.color}}"></div>
+    			<h2>{{::options.title}}</h2>
+    			<span class="text-muted">{{::options.short_description}}</span>
+      	 </a>
+
+  			<!--// Circle Icon -->
+  			<a ng-if="::(options.link_template == 'Circle Icon')" ng-href="{{::data.href}}" class="circle_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}">
+    			<span class="fa fa-stack fa-2x">
+      			<i class="fa fa-circle fa-stack-2x"></i>
+      			<i class="fa fa-{{::options.glyph}} fa-stack-1x fa-inverse"></i>
+    			</span>
+    			<h2>{{::options.title}}</h2>
+    			<span class="text-muted">{{::options.short_description}}</span>
+  			</a>
+
+ 				<!--// Color Box -->
+  			<a ng-if="::(options.link_template == 'Color Box')" ng-href="{{::data.href}}" class="color_box {{::options.class_name}} icon-link-background-{{::options.color}} text-white" target="{{::data.target}}">
+    			<div class="fa fa-{{::options.glyph}} fa-3x {{::options.class_name}}"></div>
+    			<h2>{{::options.title}}</h2>
+    			<span>{{::options.short_description}}</span>
+        </a>
+			</div>
+    
+      
       <ul ng-if="::(!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" class="nav navbar-nav">
         <li><a href ng-click="::openLogin()">${Login}</a></li>
       </ul>
@@ -280,6 +449,9 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
       </ul>
     </div>
   </nav>
+  
+  
+  
 </div>]]></template>
     </sp_widget>
 </record_update>
